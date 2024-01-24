@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: lamp.ma
-//Last modified: Tue, Jan 23, 2024 07:02:54 PM
+//Last modified: Tue, Jan 23, 2024 07:06:34 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "7798CF1F-49C0-9A97-B21A-C7B5FB68FDFF";
+fileInfo "UUID" "720D24E5-4696-55F9-7E6F-8CBFFCAC0944";
 createNode transform -s -n "persp";
 	rename -uid "537008CF-4192-EE6E-3F9A-A1815295DE07";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -33.399618520416375 10.959944398055086 -15.431932110465199 ;
-	setAttr ".r" -type "double3" -8.3999999999996806 -1195.1999999998172 0 ;
+	setAttr ".t" -type "double3" 28.06924168296413 3.6500778218610073 14.240782397709474 ;
+	setAttr ".r" -type "double3" 1.8000000000000196 -1376.8000000001366 0 ;
 	setAttr ".rpt" -type "double3" -2.375825500810941e-16 -1.118638994361605e-16 -1.2388294103446981e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0B2862E2-4B66-C43E-A77F-E685C3A183D2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 37.317918201457758;
+	setAttr ".coi" 31.380553741987043;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2693,9 +2693,6 @@ createNode polyUnite -n "polyUnite3";
 createNode groupId -n "groupId5";
 	rename -uid "851D7125-4BA0-F7DB-77B2-8A8746A21B30";
 	setAttr ".ihi" 0;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "55212CAA-4099-1F87-9376-1E90D888D95E";
-	setAttr ".sst" -type "string" "";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "2AB57C25-4CAA-3D96-5B53-019EB5CA09F0";
 	setAttr ".b" -type "string" (
@@ -2743,6 +2740,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "452F2D66-4D88-9A2A-73A9-82A4FE03E997";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "CED4D76B-433D-6A1D-652F-959B50A7F72B";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
