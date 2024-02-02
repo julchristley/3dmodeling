@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: flower.ma
-//Last modified: Thu, Feb 01, 2024 09:04:26 PM
+//Last modified: Thu, Feb 01, 2024 09:06:59 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "4948A95D-4649-3400-C086-2380FD74052B";
+fileInfo "UUID" "8E51CC88-4E33-41C3-691E-BEA875A625AF";
 createNode transform -s -n "persp";
 	rename -uid "9AB98460-4A5E-D350-13E1-0FA0DC03720B";
 	setAttr ".v" no;
@@ -1567,7 +1567,7 @@ createNode groupParts -n "groupParts1";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[0:262]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "2FCD0FB1-4EFD-BE36-7853-4D8F78D32C1B";
+	rename -uid "784D465A-45ED-48E5-CAB9-A49C8BF62787";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
