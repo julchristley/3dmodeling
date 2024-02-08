@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: hammer.ma
-//Last modified: Tue, Jan 23, 2024 03:20:35 PM
+//Last modified: Tue, Jan 23, 2024 03:21:36 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "688587F0-40C3-D9B4-D735-93AA2CD8377F";
+fileInfo "UUID" "23649F9A-41E4-1991-8A82-00AFE2D83F6F";
 createNode transform -s -n "persp";
 	rename -uid "871214DC-4143-4E63-B1AE-8AABBE23DADE";
 	setAttr ".v" no;
@@ -2497,7 +2497,7 @@ createNode groupId -n "groupId1";
 	rename -uid "78245318-44BC-86AD-0599-F9AA78D925A2";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "7D3C589E-48B3-8C61-98CD-2E9B1C3790B1";
+	rename -uid "C492C021-4D26-4E4D-2D16-79BF7BB8A62C";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
