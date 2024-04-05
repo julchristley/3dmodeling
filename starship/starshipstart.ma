@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: starshipstart.ma
-//Last modified: Thu, Apr 04, 2024 08:03:29 PM
+//Last modified: Thu, Apr 04, 2024 08:04:37 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "8FA90874-4CE5-7514-13F4-2E8AE7F4801D";
+fileInfo "UUID" "EA1DBE52-4F78-40E9-09EB-BCB791B7E227";
 createNode transform -s -n "persp";
 	rename -uid "039478EC-46F1-03BE-8DFB-D382AB179E47";
 	setAttr ".v" no;
@@ -15125,7 +15125,7 @@ createNode polyTweakUV -n "polyTweakUV3";
 	setAttr ".uvtk[3673]" -type "float2" 7.7605247e-05 0.001110971 ;
 	setAttr ".uvtk[3674]" -type "float2" 8.7976456e-05 0.0011434555 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "D2167AB2-4377-A07F-08E7-77A343F866F2";
+	rename -uid "3833651D-4229-C5DA-364D-5FB058B06104";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 95;
